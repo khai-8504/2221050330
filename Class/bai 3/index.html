@@ -50,10 +50,17 @@
             <input type="email" name="email" placeholder="Khai@gmail.com">
         </div>
         <br>
-        <!-- Số đầu tiên là 0, số thứ hai là 0 or 3 or 9, 8 số cuối là 0-9 -->
+        <!-- Số đầu tiên là 0, số thứ hai a là 0 or 3 or 8 or 9, 8 số cuối là 0-9 -->
         <div>
             <b>Số điện thoại: </b>
-            <input type="tel" name="sodienthoai" placeholder="Dạng số 0axxxxxxxx" required pattern="([0]{1}([0,3,9]{2}[0-9]{3-10}))">
+            <input type="tel" name="sodienthoai" placeholder="Dạng số 0axxxxxxxx" required pattern="([0]{1}([0,3,8,9]{1}[0-9]{8}))">
+        </div>
+        <br>
+        <div>
+            <b>Giới tính: </b> <br>
+            <input type="radio" name="gioitinh" value="nam"> Nam <br>
+            <input type="radio" name="gioitinh" value="nu"> Nữ <br>
+            <input type="radio" name="gioitinh" value="khongxacdinh"> Không xác định <br> 
         </div>
         <br>
         <div>
