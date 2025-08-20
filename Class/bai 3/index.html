@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <marquee >Hello</marquee>
     <h1>Bài 3</h1>
     <!-- Danh sách (List)  -->
     <!-- Có thứ tự ol, li  -->
@@ -44,7 +45,6 @@
                 Nhập thông tin...
             </textarea>
         </div>
-        <br>
         <div>
             <b>Email: </b>
             <input type="email" name="email" placeholder="Khai@gmail.com">
@@ -64,8 +64,64 @@
         </div>
         <br>
         <div>
+            <b>Sở thích: </b> <br>
+            Game: <input type="checkbox" name="sothich" value="game"> <br>
+            Music: <input type="checkbox" name="sothich" value="music"><br>
+            Sport: <input type="checkbox" name="sothich" value="sport"><br>
+        </div>
+        <br>
+        <div>
+            <b>Trình duyệt yêu thích: </b><br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Opera">
+            </datalist><br>
+            <select name="browsers" >
+                <option value="Chrome">Chrome</option>
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Opera">Opera</option>
+                <option value="CocCoc">Cốc cốc</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            0 <input type="range" value="20"> 100
+        </div>
+        <div>
+            <b>Tuối: </b><br>
+            <input type="number" name="tuoi" step="1" min="0" max="100">
+        </div><br>
+        <div>
+            <b>Ngày tháng năm sinh: </b>
+            <input type="date" name="ngaythangnamsinh">
+        </div><br>
+        <div>
+            <b>Màu sắc yêu thích: </b>
+            <input type="color">
+        </div><br>
+        <div>
+            <b>Chọn ảnh đại diện: </b>
+            <input type="file">
+        </div><br>
+        <div>
+            <b>Mật khẩu: </b>
+            <input type="password">
+        </div><br>
+        <div>
+            <b>Reset: </b>
+            <input type="reset">
+        </div><br>
+        <div>
             <input type="submit">
         </div>
     </form>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jfpQHBsPzkU?si=YCXsP9ZQEvN3HR1P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <video controls width="560" height="315">
+        <source src="" type="video/mp4">
+    </video>
 </body>
 </html>
