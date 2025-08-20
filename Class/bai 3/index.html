@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 3</h1>
+    <!-- Danh sách (List)  -->
+    <!-- Có thứ tự ol, li  -->
+    <p>Danh sách công việc buổi sáng</p>
+    <ol>
+        <li>Thức dậy</li>
+        <li>Đánh răng</li>
+        <li>Ăn sáng</li>
+        <li>Đi học</li>
+        <li>Giải lao</li>
+    </ol>
+    <!-- Danh sách không có thứ tự -->
+    <!-- không thứ tự ul, li -->
+     <p>Các ngôn ngữ lập trình</p>
+     <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+        <li>JAVA script</li>
+     </ul>
+
+    <h1>FORM</h1>
+    <form >
+        <div>
+            <b>Họ và tên: </b><input type="text" name="hoten" placeholder="Nhập tên vào đây">
+        </div>
+        <br>
+        <div>
+            <b>Năm: </b>
+            <input type="text" name="nam" value="2025" readonly>
+        </div>
+        <br>
+        <div>
+            <b>Giới thiệu chi tiết bản thân: </b><br>
+            <textarea name="gioithieu" id="">
+                Nhập thông tin...
+            </textarea>
+        </div>
+        <br>
+        <div>
+            <b>Email: </b>
+            <input type="email" name="email" placeholder="Khai@gmail.com">
+        </div>
+        <br>
+        <!-- Số đầu tiên là 0, số thứ hai là 0 or 3 or 9, 8 số cuối là 0-9 -->
+        <div>
+            <b>Số điện thoại: </b>
+            <input type="tel" name="sodienthoai" placeholder="Dạng số 0axxxxxxxx" required pattern="([0]{1}([0,3,9]{2}[0-9]{3-10}))">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
