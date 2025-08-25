@@ -1,0 +1,29 @@
+h3{
+    color: orangered;
+}
+/* id thì dùng # */
+#title{
+    background-color: aqua;
+}
+/* class thì dùng .*/
+.bg{
+    background-color: blueviolet;
+}
+/* Độ ưu tiên: inline - external - internal */
+p{
+    color: rebeccapurple;
+    background-color: blanchedalmond;
+}
+
+.box1{
+    background-color: brown;
+}
+.box2{
+    background-color: blue;
+    margin : 50px 30px 100px 10px; /* trên phải dưới trái*/  
+}
+.box3{
+    background-color: blueviolet;
+    width: 50%;
+    margin: auto; /* căn giữa */
+}
