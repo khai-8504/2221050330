@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="script.js"></script> 
+</head>
+<body>
+    <script>
+        document.writeln("Hello World!" + "<br>");
+
+        let hoTen = "NguyenXuanKhai"  + "<br>";
+        document.writeln(hoTen);
+
+        let soThuNhat = 10;
+        let soThuHai = 5;
+        let ketQua = 0;
+        // ketQua = soThuNhat + soThuHai;
+
+        soThuNhat += soThuHai;
+        document.writeln(soThuNhat +"<br>")
+        //document.writeln(ketQua);
+
+        let thongTinSinhVien = {
+            hoTen: "LeTruongAn",
+            mssv: 2221050052,
+            gioiTinh: true,
+            tuoi: 21,
+            lop: "Đại học Mạng_Máy_Tính_K67A",
+        }
+         
+        let diaChiA = {
+            thanhPho: "Thanh Hóa",
+            phuong: "Tào Xuyên",
+            duong: "ABC",
+            soNha: 123,
+        }
+        thongTinSinhVien.diaChi = diaChiA;
+
+        document.writeln("Xin chào bạn:" + thongTinSinhVien.hoTen + " " 
+                                         + thongTinSinhVien.tuoi + "tuổi " 
+                                         + "Nhà ở: " + thongTinSinhVien.diaChi.phuong + "-" + thongTinSinhVien.diaChi.thanhPho +"<br>")
+        
+        let namNay = 2025;
+        thongTinSinhVien.namSinh = namNay -  thongTinSinhVien.tuoi
+        document.writeln("Xin chào bạn:" + thongTinSinhVien.hoTen + " " + "Sinh năm: " + thongTinSinhVien.namSinh)
+    </script>
+</body>
+</html>
+<!-- Biến
+    - Có hai cách khai báo biến là var và let / Cú pháp : let Tên biến = Giá trị
+    - "Nối chuỗi": + "<br>"
+    - Có các phép toán cơ bản : + - * / ; Tăng 1: ++ ; Trừ 1: --;
+         phép gán : += -= *= /= %=(chia lấy phần dư)
+    - Phép so sánh và logic: == != 
+                             ===(So sánh gtri+kiểu dữ liệu) 
+                             !==(tm 1 trong 2 đk là trả về true) 
+                             !(phủ định) 
+                             > < >= <=
+                             (Kết quả trả về: True or False)
+    -->
