@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h-container{
+    display: flex;
+    margin: 0;
+    padding: auto;
+}
+.logo{
+    width: 96%;
+}
+.log-in{
+    padding-top: 10px;
+    width: 4%;
+    margin-right: 0;
+}
+button{
+    border-radius: 10px;
+}
+ul{
+    margin: 0;
+}
+li{
+    padding: 15px;
+    margin: auto;
+}
+.dmuc-dsach{
+    display: block;
+    justify-content: space-between;
+    list-style: none;
+}
+.dmuc-lket{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 0px;
+}
+.main-container{
+    display: flex;
+}
+.left-list{
+    width: 20%;
+}
+.right-list{
+    width: 70%;
+}
+.top-list{
+    display: flex;
+    justify-content: space-betweenS;
+    padding-bottom: 100px;
+}
+.hh{
+    display: flex;
+    width:50% ;
+}
+.bot-list{
+    background-color: aliceblue;
+}
+.stories-list{
+    display: flex;
+    justify-content: space-between;
+}
+.tde{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    height: 30px;
+    padding-top: 5px;
+}
+.new{
+    width: 31%;
+}
+.new img{
+    width: 97%;
+}
