@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let yesterday = new Date('2025-09-28');
+        //document.writeln(yesterday);
+
+        // Mảng
+        let arr = [1,2,3,4,5,'a','b','c',5,6];
+        document.writeln(arr.length);document.writeln("<br>");
+
+        document.writeln(arr[3]);document.writeln("<br>"); //Đọc phần tử trong mảng
+
+        document.writeln(arr.indexOf('a'));document.writeln("<br>"); // trả vị trí đầu tiên của phần tử trong mảng, k có trả -1
+
+        document.writeln(arr.lastIndexOf(5));document.writeln("<br>");// trả vị trí cuối cùng của phần tử trong mảng, k có trả -1
+
+        document.writeln(Array.isArray(arr));document.writeln("<br>"); //Check có phải mảng hay không
+
+        let a, b, c, d;
+        a = [1,2,3];
+        b = "JavaScript";
+        c = [42, "VbSprits"];
+        d = a.concat(b,c); // Gộp các biến thành 1 mảng
+        document.writeln(d.join("-"));document.writeln("<br>");// thêm dấu '-' giữa các phần tử 
+
+        e = d.pop(); // lấy phần tử cuối cùng trong mảng
+        document.writeln(e);document.writeln("<br>");
+
+        d.push("Kiên"); // Thêm phần tử vào vị trí cuối cùng
+        document.writeln(d);document.writeln("<br>");
+
+        document.writeln(d.reverse());document.writeln("<br>"); //Đảo các vị trí trong mảng
+        //unshift() thêm phần từ vào đầu mảng
+
+        d[3] = 4;// thay đổi phần tử có vị trí n trong mảng
+        document.writeln(d);document.writeln("<br>");
+
+        let toDay = new Date();
+        let now = toDay.getHours();
+        if (now < 10) {
+            document.writeln("Chào buổi sáng");
+        } else if (10 <= now && now < 12 ) {
+            document.writeln("Chào buổi trưa");
+        } else if (12 <= now && now < 17 ) {
+            document.writeln("Chào buổi chiều");
+        } else if (17 <= now && now < 22 ) {
+            document.writeln("Chào buổi tối");
+        }else {
+            document.writeln("Chào buổi đêm")
+        }document.writeln("<br>");
+        
+        let so = "10000000000000003";
+        let soCuoiCung = parseInt(so[so,length -1]);
+        if (soCuoiCung % 2 == 0){
+            document.writeln("Là số chẵn");
+        }else{
+            document.writeln("Là số lẻ")
+        }
+        
+    </script>
+</body>
+</html>
