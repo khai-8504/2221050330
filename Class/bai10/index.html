@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // //alert("welcome!");
+
+        // let result = confirm("Press a button");
+        // if (result == true){
+        //     document.writeln("Press OK! <br>");
+        // }else{
+        //     document.writeln("Press Cancel! <br>")
+        // }
+
+        // let result2 =  prompt("sometext", "default value");
+        // document.writeln(result2);
+
+        // let toDay = new Date();
+        // let theDay = toDay.getDay(); // thứ 4: 3
+        // switch(theDay){
+        //     // ktra có phải t6 k
+        //     case 5:
+        //         document.writeln("Finally Friday");
+        //         break;
+        //     // Ktra có phải t7 k
+        //     case 6:
+        //         document.writeln("Super Saturday");
+        //         break;
+        //     // Ktra có phải cn k
+        //     case 0:
+        //         document.writeln("Sleepy Sunday");
+        //         break;
+        //     default:
+        //         document.writeln("I'm looking forward to this weekend!"); document.writeln("<br>");
+        // }
+
+        // for (let i = 1; i <= 10; i++) {
+        //     document.writeln(i + " Anh xin lỗi ! <br>");
+        // }
+
+        // let arrNum = [0,1,2,3,4,5];
+        // for (let j = 0; j < arrNum.length; j++){
+        //     document.writeln(arrNum[j] + "<br>");
+        // }
+
+        // let danhSach = ["Lương Ngọc	Bích ", "Dương Gia Bình ", "Nguyễn Như Thành Danh ", "Hoàng Xuân Duẩn ", "Hà Văn Dũng"];
+        // for (let z = 0; z < danhSach.length; z++){
+        //     document.writeln("Xin chào bạn " + danhSach[z] + "<br>");
+        // }
+
+        // let x = 0;
+        // while(x <= 10){
+        //     document.writeln("The number is " + x + "<br>");
+        //     x = x + 1;
+        // }
+
+
+        // let + tên biến = giá trị
+        // function + tên hàm + (){
+        //     code logic
+        // }
+
+        //hàm k tham số
+        //Biến toàn cục: tất cả đều gọi đc ; Biến cục bộ: chỉ hàm của nó mới dùng được
+        // let name = "Anh Quang Hùng";
+
+        // function sayHello(){
+        //     document.writeln("Hello!" + name);
+        // }
+        // sayHello();
+
+        // //Có tham số
+        // function sayHello2(name,age){
+        //     document.writeln("Hello " + name + " " + age + " tuổi");
+        // }
+
+        // let nameP = prompt("Tên","Điền tên");
+        // let ageP = prompt("Tuổi","Điền tuổi");
+
+        // sayHello2(nameP, ageP);
+
+        //Kiểm tra chẵn lẻ
+        //Kết hợp promt
+        //Người dùng dã nhập vào số -> tạo hàm ktra số chẵn lẻ -> In ra kết quả
+        // Hàm kiểm tra số chẵn hay lẻ
+        let n = prompt("Nhập số: ");
+
+        function kiemTraChanLe(n) {
+            if (n % 2 === 0) {
+                document.writeln(n + " là số chẵn");
+            } else {
+                document.writeln(n + " là số lẻ");
+            }
+        }
+        
+        if (isNaN(n) == false){
+            n = parseFloat(n);
+            kiemTraChanLe(n);
+        }else{
+            document.writeln("Vui lòng nhập số!");
+        }
+    </script>
+</body>
+</html>
