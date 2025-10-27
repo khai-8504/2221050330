@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bai 11</title>
+    <title>Bài 11</title>
 </head>
 <body>
     <h1>Bài 11</h1>
-    <!--Tạo hàm JS tính điểm của sinh viên dựa vào 3 điểm A,B,C biết điểm tổng = A*0,6 + B*0,3 + C*0,1 -->
     <h2>Hàm tính điểm sinh viên</h2>
-    <div>Diem A: <input type="number" id="diemA" placeholder="Nhập điểm A"> <br></div>
-    <div>Diem B: <input type="number" id="diemB" placeholder="Nhập điểm B"> <br></div>
-    <div>Diem C: <input type="number" id="diemC" placeholder="Nhập điểm C"> <br></div>
-    <div><button onclick="tinhDiem()">Tính điểm</button></div>
-    <div>Ket Qua: <input type="text" id="ketQua"></div>
-    <script>
-        function xemKetQua(){
-            let diemA = document.getElementById("diemA").value;
-            let diemB = document.getElementById("diemB").value;
-            let diemC = document.getElementById("diemC").value;
-            tinhDiem(diemA, diemB, diemC);
-        }
 
-        function tinhDiem(a,b,c) {
-            let tong;
-            if(kiemTraHopLe(a,b,c) == true){
-                tong = a*0.6 + b*0.3 + c*0.1;
-                document.writeln(tong + "<br>");
+    <div>Điểm A: <input type="number" id="diemA" placeholder="Nhập điểm A"> <br></div>
+    <div>Điểm B: <input type="number" id="diemB" placeholder="Nhập điểm B"> <br></div>
+    <div>Điểm C: <input type="number" id="diemC" placeholder="Nhập điểm C"> <br></div>
+    <div><button onclick="tinhDiem()">Tính điểm</button></div>
+    <div>Kết quả: <input type="text" id="ketQua" readonly></div>
+
+    <script>
+        function tinhDiem() {
+            // Lấy giá trị từ input
+            let a = parseFloat(document.getElementById("diemA").value);
+            let b = parseFloat(document.getElementById("diemB").value);
+            let c = parseFloat(document.getElementById("diemC").value);
+            let ketQua = document.getElementById("ketQua");
+
+            // Kiểm tra hợp lệ
+            if (!kiemTraHopLe(a, b, c)) {
+                ketQua.value = "Điểm không hợp lệ!";
+                return;
             }
-            if(tong >= 9 && tong <=10){
-                document.writeln("Diem chu la A+" + "<br>");
-            } else if (tong >= 8 && tong <9){
-                document.writeln("Diem chu la A" + "<br>");
-            } else if (tong >= 7 && tong <8){
-                document.writeln("Diem chu la B" + "<br>");
-            } else if (tong >= 4 && tong <7){
-                document.writeln("Diem chu la C" + "<br>");
-            } else if (tong >=0 && tong <4){
-                document.writeln("Diem chu la F" + "<br>");
+
+            // Tính điểm tổng
+            let tong = a * 0.6 + b * 0.3 + c * 0.1;
+            let diemChu = "";
+
+            // Xếp loại điểm
+            if (tong >= 9 && tong <= 10) {
+                diemChu = "A+";
+            } else if (tong >= 8) {
+                diemChu = "A";
+            } else if (tong >= 7) {
+                diemChu = "B";
+            } else if (tong >= 4) {
+                diemChu = "C";
+            } else {
+                diemChu = "F";
             }
+
+            ketQua.value = `Tổng: ${tong.toFixed(2)} - Điểm chữ: ${diemChu}`;
         }
 
         function kiemTraHopLe(){
@@ -56,6 +64,7 @@
             } 
             return ketQua;
         }
+
         
     </script>
 </body>
